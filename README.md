@@ -10,6 +10,7 @@
 - `label` -> name of input
 - `error` -> text of error will show when it is empty or it is not correspond to `regular_expression`.
 - `isNotRequire` -> if you use `isNotRequire: true`, it can be empty.
+- `change`(function) -> you can do something when input is changed. `1st` argument is this component value.
 
 ## Example
 
