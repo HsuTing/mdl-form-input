@@ -21,7 +21,7 @@
   'error': 'Error',
   'regular_expression': '[A-Z]+',
   'max': '5',
-  'isNotRequire': 'true',
+  'isNotRequire': true,
   'default': 'default',
   'type': 'text'
 }
