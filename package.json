@@ -1,0 +1,32 @@
+{
+  "name": "mdl-form-input",
+  "version": "1.0.0",
+  "description": "Input for mdl-form",
+  "main": "./lib/index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HsuTing/mdl-form-input.git"
+  },
+  "keywords": [
+    "Material",
+    "Design",
+    "Lite",
+    "Form",
+    "mdl-form",
+    "mdl-form-input"
+  ],
+  "author": "HsuTing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HsuTing/mdl-form-input/issues"
+  },
+  "homepage": "https://github.com/HsuTing/mdl-form-input#readme",
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}

@@ -1,19 +1,20 @@
 'use strict'
 
-import jQuery from 'jquery';
+import $ from 'jquery';
 import React from 'react';
 
 export default class input extends React.Component {
   render() {
     let data = this.props.data;
     let defaultValue = data.default != undefined ? data.default : '';
+    let type = data.type != undefined ? data.type : 'text';
     this.props.getData(data.id, defaultValue);
     this.props.getComponents(data.id, this);
 
     return (
       <div ref="component" className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={data.style}>
         <input className="mdl-textfield__input"
-          type={data.type}
+          type={type}
           id={data.id}
           name={data.id}
           maxLength={data.max}
@@ -30,7 +31,7 @@ export default class input extends React.Component {
 
   _onChange(e) {
     let data = this.props.data;
-    let val = jQuery(e.target).val();
+    let val = $(e.target).val();
     if(data.change != undefined) {
       let temp = data.change(val);
       if(temp != undefined) {
@@ -43,8 +44,8 @@ export default class input extends React.Component {
       return;
     }
 
-    if(!jQuery(this.refs.component).hasClass('is-dirty') || jQuery(this.refs.component).hasClass('is-invalid')) {
-      jQuery(this.refs.component).addClass('is-invalid');
+    if(!$(this.refs.component).hasClass('is-dirty') || $(this.refs.component).hasClass('is-invalid')) {
+      $(this.refs.component).addClass('is-invalid');
       this.props.getData(data.id, '');
     }
     else {
