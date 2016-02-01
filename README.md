@@ -1,5 +1,12 @@
 # Input for mdl-form
 
+## Start
+
+Install package:
+```
+  npm install jquery react react-dom mdl-form
+```
+
 ## Parameter
 
 - `default` -> value of input

@@ -1,6 +1,6 @@
 {
   "name": "mdl-form-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Input for mdl-form",
   "main": "./lib/index.jsx",
   "scripts": {
