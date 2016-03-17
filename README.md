@@ -4,7 +4,7 @@
 
 Install package:
 ```
-  npm install jquery react react-dom mdl-form mdl-form-input
+  npm install mdl-form mdl-form-input react jquery
 ```
 
 You need to see [mdl-form](https://github.com/HsuTing/mdl-form.git).
