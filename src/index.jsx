@@ -12,7 +12,10 @@ export default class input extends React.Component {
     this.props.getComponents(data.id, this);
 
     return (
-      <div ref="component" className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={data.style}>
+      <div ref="component"
+           className={data.className === undefined ? "mdl-textfield mdl-js-textfield mdl-textfield--floating-label" : data.className}
+           style={data.style}
+      >
         <input className="mdl-textfield__input"
           type={type}
           id={data.id}

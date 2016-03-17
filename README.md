@@ -13,6 +13,7 @@ You need to see [mdl-form](https://github.com/HsuTing/mdl-form.git).
 
 - `default` -> value of input
 - `type` -> type of input(default: text)
+- `className` -> add class
 - `style` -> change style
 - `max` -> max-length of input 
 - `regular_expression` -> pattern of input
@@ -27,6 +28,7 @@ You need to see [mdl-form](https://github.com/HsuTing/mdl-form.git).
 {   
   'id': 'component_id',
   'label': 'Label',
+  'className': 'class',
   'style': {'color': 'red'},
   'error': 'Error',
   'regular_expression': '[A-Z]+',
